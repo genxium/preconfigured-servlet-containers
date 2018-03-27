@@ -1,0 +1,11 @@
+*.swp
+__MACOSX
+.DS_Store
+catalina.base_IS_UNDEFINED
+catalina.base_IS_UNDEFINED/*
+*.log
+*.out
+apache-tomcat
+restcomm-sip-servlets
+apache-tomcat/*
+restcomm-sip-servlets/*

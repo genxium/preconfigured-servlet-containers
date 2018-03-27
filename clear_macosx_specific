@@ -1,0 +1,12 @@
+#!/bin/bash
+
+basedir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+files_of_interest=( "$basedir/apache-tomcat-8.0.49-preconfigured.zip" "$basedir/restcomm-sip-servlets-3.2.0-89-apache-tomcat-8.0.26-preconfigured.zip" );
+
+for filepath in "${files_of_interest[@]}"
+do
+  zip -d $filepath __MACOSX/\*
+  zip -d $filepath \*/.DS_Store
+done
+
